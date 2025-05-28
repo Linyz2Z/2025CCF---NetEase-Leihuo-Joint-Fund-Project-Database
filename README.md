@@ -41,7 +41,7 @@ bash demo/test.sh
 ### 结果
 在 `code/test_results/` 文件夹中查看对应的csv结果文件。
 
-## 项目结构说明（Project Structure）
+## 项目结构说明
 
 ```
 project/ 
