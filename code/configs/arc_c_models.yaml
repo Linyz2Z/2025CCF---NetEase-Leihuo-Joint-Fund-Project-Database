@@ -1,0 +1,12 @@
+models:
+  - name: arc_c_jcd_seed42
+    type: RouterModule
+    weight: 1.0
+
+  - name: arc_c_jcd_seed526
+    type: RouterModule
+    weight: 1.0
+
+  - name: arc_c_jcd_seed724
+    type: RouterModule
+    weight: 1.0

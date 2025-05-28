@@ -1,0 +1,12 @@
+models:
+  - name: math_jcd_seed42
+    type: RouterModule
+    weight: 1.0
+
+  - name: math_jcd_seed526
+    type: RouterModule
+    weight: 1.0
+
+  - name: math_jcd_seed724
+    type: RouterModule
+    weight: 1.0
