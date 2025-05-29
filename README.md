@@ -68,7 +68,6 @@ project/
 │ ├── configs/              # 模型配置文件
 │ ├── test_data/            # 测试数据
 │ ├── test_result/          # 测试结果
-│ ├── val_data/             # 验证数据
 │ ├── router_dataset.py     # 数据集定义
 │ ├── router_model.py       # 模型结构定义
 │ └── test.py               # 模型推理程序
