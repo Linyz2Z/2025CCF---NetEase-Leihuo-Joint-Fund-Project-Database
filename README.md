@@ -30,8 +30,8 @@ RouterJSD 提供了一套智能调度机制，旨在无需调用所有大语言�
 ### 1. 配置环境
 创建conda环境并安装依赖：
 ```bash
-conda create -n RouterLCD python=3.11
-conda activate RouterLCD
+conda create -n RouterJSD python=3.11
+conda activate RouterJSD
 
 # 安装对应版本的 torch 和 torchvision
 pip install torch torchvision torchaudio
