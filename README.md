@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. 下载权重文件
-请前往[百度网盘](https://pan.baidu.com/)下载所需的权重文件，然后将其解压至 项目根目录下的`model/` 文件夹中，并确保目录结构如下所示：
+请前往 [百度网盘](https://pan.baidu.com/) 下载所需的权重文件，然后将其解压至项目根目录下的 `model/` 文件夹中，并确保目录结构如下所示：
 
 ```
 model/
