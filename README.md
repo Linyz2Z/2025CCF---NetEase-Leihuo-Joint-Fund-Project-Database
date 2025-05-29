@@ -44,9 +44,9 @@ pip install -r requirements.txt
 
 ```
 model/
-├── aclue_jcd_seed42
+├── aclue_jcd_seed42/
 │ └── best_model.pth
-├── aclue_jcd_seed526
+├── aclue_jcd_seed526/
 │ └── best_model.pth
 └──......
 ```
