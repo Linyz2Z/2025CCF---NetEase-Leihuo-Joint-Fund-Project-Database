@@ -89,7 +89,7 @@ project/
 | 2 | 关于：couplet_prediction <br> 问题：“一定精神空世界”的下联最可能是___。<br> 选项：<br> A. 十分恩爱老夫妻 <br> B. 叩头北阙作庸臣 <br> C. 子夜无心月入怀 <br> D. 我学草字有原因  | model_name |
 
 
-### 🚀运行命令
+### 运行命令
 
 ```bash
 python code/test.py \
