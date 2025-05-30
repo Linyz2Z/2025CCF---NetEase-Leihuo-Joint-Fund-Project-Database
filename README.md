@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. 下载权重文件
-请前往 [百度网盘](https://pan.baidu.com/) 下载所需的权重文件，然后将其解压至项目根目录下的 `model/` 文件夹中，并确保目录结构如下所示：
+请前往 [百度网盘](https://pan.baidu.com/s/1kxxlevQNaCmEvxXzvO3KfA) (提取码：6hrv) 下载所需的权重文件，然后将其解压至项目根目录下的 `model/` 文件夹中，并确保目录结构如下所示：
 
 ```
 model/
@@ -76,3 +76,36 @@ project/
 ├── requirements.txt        # 依赖库
 └── README.md               # 项目说明文档
 ```
+
+## demo测试展示
+
+### 测试数据
+`code/test_data/demo_test_pred.csv`
+
+| id | question | pred |
+|---|-----|-------|
+| 0 | 关于：poetry_sentiment_analysis <br> 问题：古诗词“一麾来此恰三年\|到得终更分外难\|老眼看灯浑作晕\|愁心得酒不成欢“的整体情感是____<br>选项：<br> A. 消极的 <br> B. 无法判断 <br> C. 中性的 <br> D. 积极的  | model_name |
+| 1 | 关于：basic_ancient_chinese <br> 问题：按照传统的“六书”体例，“吹”字应属 <br> 选项：<br> A. 指事 <br> B. 象形 <br> C. 会意 <br> D. 形声  | model_name |
+| 2 | 关于：couplet_prediction <br> 问题：“一定精神空世界”的下联最可能是___。<br> 选项：<br> A. 十分恩爱老夫妻 <br> B. 叩头北阙作庸臣 <br> C. 子夜无心月入怀 <br> D. 我学草字有原因  | model_name |
+
+
+### 🚀运行命令
+
+```bash
+python code/test.py \
+    --device cuda:0 \
+    --batch_size 32 \
+    --test_datasets demo \
+    --model_file ../code/configs/aclue_models.yaml \
+    --final_test
+
+```
+
+### 预测结果
+`code/test_results/demo_test_pred.csv`
+
+| id | question | pred |
+|---|-----|-------|
+| 0 | 关于：poetry_sentiment_analysis <br> 问题：古诗词“一麾来此恰三年\|到得终更分外难\|老眼看灯浑作晕\|愁心得酒不成欢“的整体情感是____<br>选项：<br> A. 消极的 <br> B. 无法判断 <br> C. 中性的 <br> D. 积极的  | gpt_4o |
+| 1 | 关于：basic_ancient_chinese <br> 问题：按照传统的“六书”体例，“吹”字应属 <br> 选项：<br> A. 指事 <br> B. 象形 <br> C. 会意 <br> D. 形声  | qwen25_72b_instruct |
+| 2 | 关于：couplet_prediction <br> 问题：“一定精神空世界”的下联最可能是___。<br> 选项：<br> A. 十分恩爱老夫妻 <br> B. 叩头北阙作庸臣 <br> C. 子夜无心月入怀 <br> D. 我学草字有原因  | deepseek_chat |
