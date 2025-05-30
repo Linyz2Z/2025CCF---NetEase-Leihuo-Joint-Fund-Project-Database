@@ -1,0 +1,23 @@
+id,question,pred
+0,"关于：poetry_sentiment_analysis
+问题：古诗词“一麾来此恰三年|到得终更分外难|老眼看灯浑作晕|愁心得酒不成欢“的整体情感是____
+选项：
+A. 消极的
+B. 无法判断
+C. 中性的
+D. 积极的",model_name
+1,"关于：basic_ancient_chinese
+问题：按照传统的“六书”体例，“吹”字应属
+选项：
+A. 指事
+B. 象形
+C. 会意
+D. 形声",model_name
+2,"关于：couplet_prediction
+问题：“一定精神空世界”的下联最可能是___。
+选项：
+A. 十分恩爱老夫妻
+B. 叩头北阙作庸臣
+C. 子夜无心月入怀
+D. 我学草字有原因
+",model_name
